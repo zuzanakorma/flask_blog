@@ -1,0 +1,8 @@
+.env
+site.db
+__pycache__
+.vscode
+venv
+.DS_Store
+flaskblog/static/profile_pics/*
+!flaskblog/static/profile_pics/default.jpg
