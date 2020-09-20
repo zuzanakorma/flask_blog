@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 from flaskblog.config import Config
+import os
 
 
 db = SQLAlchemy()
@@ -33,3 +34,6 @@ def create_app(config_class=Config):
     app.register_blueprint(errors)
 
     return app
+
+if not os.path.exists('flaskblog/site.db'):
+    db.create_all(app=create_app())
