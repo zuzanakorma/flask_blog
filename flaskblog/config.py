@@ -10,4 +10,3 @@ class Config:
     MAIL_USERNAME = os.environ.get('EMAIL_USER')
     MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
     MAIL_NO_REPLY = os.environ.get('EMAIL_NO_REPLY')
-
